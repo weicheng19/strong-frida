@@ -1,9 +1,14 @@
 name: strong-frida build
 
-on:
-  push:
-    paths:
-    - VERSION
+on: 
+  schedule:
+    - cron: "0 9/12 * * *"
+  workflow_dispatch:
+  
+#on:
+ # push:
+ #   paths:
+ #   - VERSION
 
 jobs:
   release:
