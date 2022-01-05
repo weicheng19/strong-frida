@@ -2,7 +2,7 @@ name: strong-frida
 
 on: 
   schedule:
-    - cron: "0 9/12 * * *"
+    - cron: "* * * * *"
   workflow_dispatch:
   
 #on:
